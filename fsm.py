@@ -3,7 +3,7 @@ from transitions.extensions import GraphMachine
 
 class TocMachine(GraphMachine):
     def __init__(self, **machine_configs):
-        update.message.reply_text("Hi I'm a chatbot which can tell jokes\nenter \"list\" to see the jokelist\nenter \"joke\" to hear all jokes in order"
+        #update.message.reply_text("Hi I'm a chatbot which can tell jokes\nenter \"list\" to see the jokelist\nenter \"joke\" to hear all jokes in order"
         self.machine = GraphMachine(
             model = self,
             **machine_configs
