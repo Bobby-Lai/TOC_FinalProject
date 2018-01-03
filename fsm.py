@@ -48,7 +48,7 @@ class TocMachine(GraphMachine):
 
 
     def on_enter_jokelist(self, update):
-        update.message.reply_text("Which joke do you want to hear?\n1. Emergency\n2. Say Daddy\n3. Time to Live\n4. Fancy Stuff\n5. No Problem\nPlease enter \"joke(number)\" you want to hear, (for example:joke1)\n\nEnter \"home\" to go to the home page")
+        update.message.reply_text("Which joke do you want to hear?\n1. Emergency\n2. Say Daddy\n3. Time to Live\n4. Fancy Stuff\n5. No Problem\nPlease enter \"joke(number)\" you want to hear, (for example:joke1)\n\nEnter \"home\" to go to the home page and restart")
         
     def on_exit_jokelist(self, update):
         print('Leaving jokelist')
@@ -59,7 +59,7 @@ class TocMachine(GraphMachine):
         update.message.reply_text("Doctor: I'm sorry but you suffer from a terminal illness and have only 10 to live.\nPatient: What do you mean, 10? 10 what? Months? Weeks?!\nDoctor: Nine.")
         update.message.reply_text("Mother: How was school today, Patrick?\nPatrick: It was really great mum! Today we made explosives!\nMother: Ooh, they do very fancy stuff with you these days. And what will you do at school tomorrow?\nPatrick: What school?")
         update.message.reply_text("Today I went to a barber’s shop for a shave. The barber asked me to put a small wooden ball in my mouth so he could get a closer shave around my cheeks.\nI asked: But what if I swallow the ball?\nHe replied: No problem sir, you just bring it back tomorrow like everybody else.")
-        update.message.reply_text("Enter \"home\" to go to the home page")
+        update.message.reply_text("Enter \"home\" to go to the home page and restart")
 
     def on_exit_jokeinorder(self, update):
         print('Leaving jokeinorder')
